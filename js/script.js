@@ -16,6 +16,4 @@ document.addEventListener("DOMContentLoaded", function() {
           swiper: galleryThumbs
         }
     });
-
-    document.querySelector('.gallery-thumbs .swiper-slide-thumb-active').classList
 });

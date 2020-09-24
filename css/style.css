@@ -20,6 +20,9 @@ body {
   justify-content: start;
   height: 100%;
 }
+.gallery-thumbs .swiper-wrapper {
+  max-height: 100px;
+}
 .gallery-top {
   width: 80%;
 }
