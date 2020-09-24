@@ -7,10 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         slideToClickedSlide: true,
-        autoHeight: true
+        setWrapperSize: true,
+        autoHeight: true,
+        height: '400'
     });
       var galleryTop = new Swiper('.gallery-top', {
-        spaceBetween: 10,
         effect: 'fade',
         thumbs: {
           swiper: galleryThumbs

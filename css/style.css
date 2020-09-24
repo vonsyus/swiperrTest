@@ -28,8 +28,6 @@ body {
 .gallery-thumbs .swiper-slide img {
   max-height: none;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .gallery-top {
   max-width: 80%;
