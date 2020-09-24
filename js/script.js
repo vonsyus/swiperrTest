@@ -1,10 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // var swiper = new Swiper('.swiper-container', {
-    //     loop: false,
-    //     spaceBetween: 30,
-    //     effect: 'fade',
-    // });
-
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 6,

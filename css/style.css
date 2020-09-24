@@ -1,12 +1,12 @@
 html,
 body {
   position: relative;
-  height: 100%;
 }
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+  padding: 0;
 }
 body {
   background: #eee;
@@ -16,60 +16,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.container {
+.slider {
   display: flex;
-  height: 100%;
-  max-width: 1110px;
-  margin: 0 auto;
-}
-.col {
-  max-width: 50%;
-}
-.sliderrr {
-  display: flex;
-  justify-content: start;
-  height: 100%;
-}
-.gallery-top {
-  width: 80%;
-  height: 80%;
-}
-.gallery-thumbs {
-  width: 18%;
-  height: 80%;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.swiper-slide-thumb-active {
-  border-bottom: 3px solid red;
-}
-.swiper-container {
-  margin: 0;
-}
-.swiper-slide .inner {
-  height: 100%;
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #ccc;
 }
 .gallery-thumbs {
   margin-right: 10px;
@@ -78,14 +26,14 @@ body {
   overflow: hidden;
 }
 .gallery-thumbs .swiper-slide img {
+  max-height: none;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.gallery-top .swiper-slide {
-  overflow: hidden;
+.gallery-top {
+  max-width: 80%;
 }
-.gallery-top .swiper-slide img {
-  max-width: 100%;
-}
-.text {
-  padding-left: 40px;
+.swiper-slide-thumb-active {
+  border-bottom: 3px solid red;
 }
