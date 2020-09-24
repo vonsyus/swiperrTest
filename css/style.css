@@ -6,7 +6,6 @@ body {
 *:before,
 *:after {
   box-sizing: border-box;
-  padding: 0;
 }
 body {
   background: #eee;
@@ -18,6 +17,25 @@ body {
 }
 .slider {
   display: flex;
+  justify-content: start;
+  height: 100%;
+}
+.gallery-top {
+  width: 80%;
+}
+.gallery-thumbs {
+  width: 18%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.swiper-slide-thumb-active {
+  border-bottom: 3px solid red;
+}
+.swiper-container {
+  margin: 0;
 }
 .gallery-thumbs {
   margin-right: 10px;
@@ -26,12 +44,14 @@ body {
   overflow: hidden;
 }
 .gallery-thumbs .swiper-slide img {
-  max-height: none;
+  position: absolute;
+  left: 0;
+  top: 0;
   max-width: 100%;
 }
-.gallery-top {
-  max-width: 80%;
+.gallery-top .swiper-slide {
+  overflow: hidden;
 }
-.swiper-slide-thumb-active {
-  border-bottom: 3px solid red;
+.gallery-top .swiper-slide img {
+  max-width: 100%;
 }

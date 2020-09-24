@@ -7,14 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         slideToClickedSlide: true,
-        setWrapperSize: true,
-        autoHeight: true,
-        height: '400'
+        autoHeight: true
     });
       var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
         effect: 'fade',
         thumbs: {
           swiper: galleryThumbs
         }
     });
+
+    document.querySelector('.gallery-thumbs .swiper-slide-thumb-active').classList
 });
